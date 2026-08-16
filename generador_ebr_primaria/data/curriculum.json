@@ -1,0 +1,469 @@
+{
+  "version": "0.1",
+  "levels": {
+    "Primaria": {
+      "cycles": {
+        "III": [
+          1,
+          2
+        ],
+        "IV": [
+          3,
+          4
+        ],
+        "V": [
+          5,
+          6
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "id": "personal_social",
+      "name": "Personal Social",
+      "approach": "Enfoques de desarrollo personal y ciudadanía activa",
+      "defaultHours": 4,
+      "competencies": [
+        {
+          "id": "ps_identidad",
+          "name": "Construye su identidad",
+          "capacities": [
+            "Se valora a sí mismo",
+            "Autorregula sus emociones",
+            "Reflexiona y argumenta éticamente",
+            "Vive su sexualidad de manera plena y responsable"
+          ],
+          "standards": {
+            "V": "Construye su identidad al tomar conciencia de los aspectos que lo hacen único, cuando se reconoce a sí mismo a partir de sus características personales, sus capacidades y limitaciones reconociendo el papel de las familias en la formación de dichas características. Aprecia su pertenencia cultural a un país diverso. Explica las causas y consecuencias de sus emociones, y utiliza estrategias para regularlas. Manif iesta su punto de vista frente a situaciones de conflicto moral, en función de cómo estas le afectan a él o a los demás. Examina sus acciones en situaciones de conflicto moral que se presentan en la vida cotidiana y se plantea comportamientos que tomen en cuenta principios éticos. Establece relaciones de igualdad entre hombres y mujeres, y explica su importancia. Crea vínculos afectivos positivos y se sobrepone cuando estos cambian. Identifica con ductas para protegerse de situaciones que ponen en riesgo su integridad en relación a su sexualidad.",
+            "IV": "Construye su identidad al tomar conciencia de los aspectos que lo hacen único, cuando se reconoce a sí mismo a partir de sus características físicas, cualidades, habilidades, intereses y logros y valora su pertenencia familiar y escolar. Distingue sus diversas emociones y comportamientos, menciona las causas y las consecuencias de estos y las regula usando estrategias diversas. Explica con sus propios argumentos por qué considera buenas o malas determinadas acciones. Se relaciona con las niñas y ni ños con igualdad, reconociendo que todos tienen diversas capacidades. Desarrolla comportamientos que fortalecen las relaciones de amistad. Identifica situaciones que afectan su privacidad o la de otros y bu sca ayuda cuando alguien no la respeta.",
+            "III": "Construye su identidad al tomar conciencia de los aspectos que lo hacen único, cuando se reconoce a sí mismo a partir de sus características físicas, habilidades y gustos. Se da cuenta que es capaz de realizar tareas y aceptar retos. Disfruta de ser parte de su familia, escuela y comunidad. Reconoce y expresa sus emociones, y las regula a partir de la interacción con sus compañeros y docente, y de las normas establecida s de manera conjunta. Explica con razones sencillas por qué algunas acciones cotidianas causan malestar a él o a los demás, y por qué otras producen bienestar a todos. Se reconoce como niña o niño y explica que ambos pueden realizar las mismas actividades. Muestra afecto a las personas que estim a e identifica a las personas que le hacen sentir protegido y seguro y recurre a ellas cuando las necesita."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "ps_convive",
+          "name": "Convive y participa democráticamente",
+          "capacities": [
+            "Interactúa con todas las personas",
+            "Construye normas y asume acuerdos y leyes",
+            "Maneja conflictos de manera constructiva",
+            "Delibera sobre asuntos públicos",
+            "Participa en acciones que promueven el bienestar común"
+          ],
+          "standards": {
+            "V": "Convive y participa democráticamente cuando se relaciona con los demás respetando las difere ncias, los derechos de cada uno, cumpliendo y evaluando sus responsabilidades. Se interesa por relacionarse con personas de culturas distintas y conocer sus costumbres. Construye y evalúa normas de convivencia tomando en cuenta sus derechos. Maneja conflictos utilizando el diálogo y la mediación en base a criterios de igualdad o equidad. Propone, planifica y realiza acciones colectivas orientadas al bien común, la solidaridad, la protección de las personas vulnerables y la defensa de sus derechos. Delibera sobre asuntos de interés público con argumentos basados en fuentes y toma en cuenta la opinión de los demás.",
+            "IV": "Convive y participa democráticamente cuando se relaciona con los demás respetando las diferencias, expresando su desacuerdo frente a situaciones que vulneran la convivencia y cumpliendo con sus responsabilidades. Conoce las manifestaciones culturales de su localidad, región o país. Construye y evalúa acuerdos y normas tomando en cuenta el punto de vista de los demás. Recurre al diálogo para manejar conflictos. Propone y realiza acciones colectivas orientadas al bienestar común a partir de la deliberación sobre asuntos de interés público, en la que se da cuenta que existen opiniones distintas a la suya.",
+            "III": "Convive y participa democráticamente cuando se relaciona con los demás respetando las diferencias y cumpliendo con sus responsabilidades. Conoce las costumbres y características de las personas de su localidad o regi ón. Construye de manera colectiva acuerdos y normas. Usa estrategias sencillas para resolver conflictos. Realiza acciones específicas para el benefic io de todos a partir de la deliberación sobre asuntos de interés común tomando como fuente sus experiencias previas."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "ps_historia",
+          "name": "Construye interpretaciones históricas",
+          "capacities": [
+            "Interpreta críticamente fuentes diversas",
+            "Comprende el tiempo histórico",
+            "Elabora explicaciones sobre procesos históricos"
+          ],
+          "standards": {
+            "V": "Construye interpretaciones históricas en las que explica, de manera general, procesos históricos peruanos, empleando algunas categorías temporales. Identifica las causas inmediatas y lejanas que desencadenaron dichos procesos, así como las consecuencias cuyos efectos se ven de inmediato o a largo plazo. Ordena cronológicamente procesos históricos peruanos y describe algunos cambios, permanencias y simultaneidades producidos en ellos. Utiliza información de diversas fuentes a partir de identificar su origen y distinguiendo algunas diferencias entre las versiones que dan sobre los procesos históricos.",
+            "IV": "Construye interpretaciones históricas en las que narra hechos y procesos relacionados a la historia de su región, en los que incorpora más de una dimensión y reconoce diversas causas y consecuencias. Utiliza información de diversas fuentes a partir de identificar las más pertinentes para responder sus preguntas. Organiza secuencias para comprender cambios ocurridos a través del tiempo, aplicando términos relacionados al tiempo.",
+            "III": "Construye interpretaciones históricas en las que describe los cambios ocurridos en su familia y comunidad a partir de comparar el presente y el pasado, y de reconocer algunas causas y consecuencias de estos c ambios. Obtiene información sobre el pasado de diversos tipos de fuentes, así como expresiones temporales propias de la vida cotidiana. Secuencia hechos o acciones cotidianas ocurridos en periodos de tiempo corto (días, semanas, meses) e identifica acciones simultáneas."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "ps_espacio",
+          "name": "Gestiona responsablemente el espacio y el ambiente",
+          "capacities": [
+            "Comprende las relaciones entre los elementos naturales y sociales",
+            "Maneja fuentes de información para comprender el espacio geográfico",
+            "Genera acciones para preservar el ambiente"
+          ],
+          "standards": {
+            "V": "Gestiona responsablemente el espacio y ambiente al realizar frecuentemente actividades para su cuidado y al disminuir los factores de vulnerabilidad en su escuela. Utiliza distintas fuentes y herramientas cartográficas para ubicar elementos en el espacio geográfico y compara estos espacios a di ferentes escalas considerando la acción de los actores sociales. Explica las problemáticas ambientales y territoriales a partir de sus causas, consecuencias y sus manifestaciones a diversas escalas.",
+            "IV": "Gestiona responsab lemente el espacio y ambiente al realizar actividades específicas para su cuidado a partir de reconocer las causas y consecuencias de los problemas ambientales. Reconoce los lugares vulnerables y seguros de su escuela. Describe las características de los espacios geográficos de su localidad o región. Utiliza representaciones cartográficas sencillas, tomando en cuenta los puntos cardinales y otros elementos cartográficos, para ubicar elementos del espacio.",
+            "III": "Gestiona responsablemente el espacio y ambiente al desarrollar actividades sencillas frente a los problemas y peligros que lo afectan. Explica de manera sencilla las relaciones directas que se dan entre los elementos naturales y sociales de su espacio cotidiano. Utiliza puntos de referencia para ubicarse, desplazarse y representar su espacio."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "ps_recursos",
+          "name": "Gestiona responsablemente los recursos económicos",
+          "capacities": [
+            "Comprende las relaciones entre los elementos del sistema económico y financiero",
+            "Toma decisiones económicas y financieras"
+          ],
+          "standards": {
+            "V": "Gestiona responsablemente los recursos económicos al utilizar el dinero y otros recursos como consumidor informado y al realizar acciones de ahorro, inversión y cuidado de ellos. Explica el papel de la publicidad frente a las decisiones de consumo y en la planifica ción de los presupuestos personales y familiares, así como la importancia de cumplir con el pago de impuestos, tributos y deudas como medio para el bienestar común. Explica los roles que cumplen las empresas y el Estado respecto a la satisfacción de las necesidades económicas y financieras de las personas.",
+            "IV": "Gestiona responsablemente los recursos económicos al diferenciar entre necesidades y deseos, y al usar los servicios públicos de su espacio cotidiano, reconociendo que tienen un costo. Reconoce que los miembros de su comunidad se vinculan al desempeñar dis tintas actividades económicas y que estas actividades inciden en su bienestar y en el de las otras personas.",
+            "III": "Gestiona responsablemente los recursos económicos al utilizar los bienes y servicios con los que cuenta en su familia y en la escuela. Reconoce que las personas y las instituciones de su comunidad desarrollan actividades económicas para satisfacer sus necesidades y que contribuyen a su bienestar."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        }
+      ]
+    },
+    {
+      "id": "educacion_fisica",
+      "name": "Educación Física",
+      "approach": "Enfoque de la corporeidad",
+      "defaultHours": 2,
+      "competencies": [
+        {
+          "id": "ef_motricidad",
+          "name": "Se desenvuelve de manera autónoma a través de su motricidad",
+          "capacities": [
+            "Comprende su cuerpo",
+            "Se expresa corporalmente"
+          ],
+          "standards": {
+            "V": "Se desenvuelve de manera autónoma a través de su motricid ad cuando acepta sus posibilidades y limitaciones según su desarrollo e imagen corporal. Realiza secuencias de movimientos coordinados aplicando la alternancia de sus lados corporales de acuerdo a su utilidad. Produce con sus pares secuencias de movimientos corporales, expresivos o rítmicos en relación a una intención.",
+            "IV": "Se desenvuelve de manera autónoma a través de su motricidad cuando comprende cómo usar su cuerpo explorando la alternancia de sus lados corporales de acuerdo a su utilidad y ajustando la posición del cuerpo en el espacio y en el tiempo en diferentes etapas de las acciones motrices, con una actitud positiva y una voluntad de experimentar situaciones diversas. Experimenta nuevas posibilidades expresivas d e su cuerpo y las utiliza para relacionarse y comunicar ideas, emociones, sentimientos, pensamientos.",
+            "III": "Se desenvuelve de manera autónoma a través de su motricidad cuando c omprende cómo usar su cuerpo en las diferentes acciones que realiza utilizando su lado dominante y realiza movimientos coordinados que le ayudan a sentirse seguro en la práctica de actividades físicas. Se orienta espacialmente en relación a sí mismo y a otros puntos de referencia. Se expresa corporalm ente con sus pares de diferentes utilizando el ritmo, gestos y movimientos como recursos para comunicar."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "ef_salud",
+          "name": "Asume una vida saludable",
+          "capacities": [
+            "Comprende las relaciones entre la actividad física, alimentación, postura e higiene personal y del ambiente, y la salud",
+            "Incorpora prácticas que mejoran su calidad de vida"
+          ],
+          "standards": {
+            "V": "Asume una vida saludable cuando utiliza instrumentos que miden la aptitud física y estado nutricional e interpreta la información de los resu ltados obtenidos para mejorar su calidad de vida. Replantea sus hábitos higiénicos y alimenticios tomando en cuenta los cambios físicos propios de la edad, evita la realización de ejercicios y posturas contraindicadas para la salud en la práctica de activi dad física. Incorpora prácticas saludables para su organismo consumiendo alimentos adecuados a las características personales y evitando el consumo de drogas. Propone ejercicios de activación y relajación antes, durante y después de la práctica y participa en actividad física de distinta intensidad regulando su esfuerzo.",
+            "IV": "Asume una vida saludable cuando diferencia los alimentos de su dieta familiar y de su región que son saludables de los que no lo son. Previene riesgos relacionados con la postura e higiene conociendo aquellas que favorecen y no favorecen su salud e identifica su fuerza, resistencia y velocidad en la práctica de actividades lúdicas. Adapta su esfuerzo en la práctica de actividad física de acuerdo a las ca racterísticas de la actividad y a sus posibilidades, aplicando conocimientos relacionados con el ritmo cardiaco, la respiración y la sudoración. Realiza prácticas de activación corporal y psicológica 8, e incorpora el autocuidado relacionado con los ritmos de actividad y descanso para mejorar el funcionamiento de su organismo.",
+            "III": "Asume una vida saludable cuando diferencia los alimentos saludables de su dieta familiar, los momentos adecuados para ingerirlos y las posturas q ue lo ayudan al buen desempeño en la práctica de actividad física y de la vida cotidiana, reconociendo la importancia del autocuidado. Participa regularmente en la práctica de actividades lúdicas identificando su ritmo cardiaco, respiración y sudoración; u tiliza prácticas de activación corporal y psicológica antes de la actividad lúdica."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "ef_sociomotriz",
+          "name": "Interactúa a través de sus habilidades sociomotrices",
+          "capacities": [
+            "Se relaciona utilizando sus habilidades sociomotrices",
+            "Crea y aplica estrategias y tácticas de juego"
+          ],
+          "standards": {
+            "V": "Interactúa a través de sus habilidades sociomotrices proactivamente con un sentido de cooperación teniendo en cuenta las adaptaciones o modificaciones propuestas por el grupo en diferentes actividades físicas. Hace uso de estrategias de cooperación y oposición seleccionando los diferentes elementos técnicos y tácticos que se pueden dar en la práctica de actividades lúdicas y predeportivas, para resolver la situación de juego que le dé un mejor resultado y que responda a las variaciones que se presentan en el entorno.",
+            "IV": "Interactúa a través de sus habilidades sociomotrices al tomar acuerdos sobre la manera de jugar y los posibles cambios o conflictos que se den y propone adaptaciones o modificaciones para favorecer la inclusión de compañeros en actividades lúdicas, aceptando al oponente como compañero de juego. Adapta la estrategia de juego anticipando las intenciones de sus compañeros y oponentes para cumplir con los objetivos planteados. Propone reglas y las modifica de acuerdo a las necesidades del contexto y los intereses del grupo en la práctica de actividades físicas.",
+            "III": "Interactúa a través de sus habilidades sociomotrices al aceptar al otro como compañero de juego y busca el consenso sobre la manera de jugar para lograr el bienestar común y muestra una actitud de respeto evitando juegos violentos y humillantes; expresa su posición ante un conflicto con intención de resolverlo y escucha la posición de sus compañeros en los diferentes tipos de juegos. Resuelve situaciones motrices a través de estrategias colectivas y participa en la construcción de reglas de juego adaptadas a la situación y al entorno, para lograr un objetivo común en la práctica de actividades lúdicas."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        }
+      ]
+    },
+    {
+      "id": "arte",
+      "name": "Arte y Cultura",
+      "approach": "Enfoque multicultural e interdisciplinario",
+      "defaultHours": 2,
+      "competencies": [
+        {
+          "id": "arte_aprecia",
+          "name": "Aprecia de manera crítica manifestaciones artístico-culturales",
+          "capacities": [
+            "Percibe manifestaciones artístico-culturales",
+            "Contextualiza manifestaciones artístico-culturales",
+            "Reflexiona creativa y críticamente sobre manifestaciones artístico-culturales"
+          ],
+          "standards": {
+            "V": "Aprecia de manera crítica manifestaciones artístico-culturales al interpretar las cualidades expresivas de los elementos del arte, la estructura y los medios utilizados en una manifestación artístico-cultural y explica cómo transmite mensajes, ideas y sentim ientos. Investiga los contextos donde se originan manifestaciones artístico -culturales tradicionales y contemporáneas e identifica cómo los cambios, las tradiciones, las creencias y valores revelan la manera en que una determinada persona o sociedad ha viv ido. Genera hipótesis sobre el significado y las diversas intenciones que puede tener una manifestación creada en contextos históricos y culturales diferentes.",
+            "IV": "Aprecia de manera crítica manifestaciones artístico-culturales al observar, escuchar y describir las características claves de una manifestación artístico-cultural, su forma, los medios que utiliza, su temática; describe las ideas o sentimientos que comunica. Investiga los contextos donde se origina e infiere información acerca del lugar, la época y la cultura donde fue creada. Integra la información recogida y describe de qué manera una manifestación artístico -cultural comunica ideas, sentimientos e intenciones.",
+            "III": "Aprecia de manera crítica manifestaciones artístico -culturales al o bservar, escuchar y describir las características visuales, táctiles, sonoras y kinestésicas de estas manifestaciones, describiendo las sensaci ones que le transmiten. Participa de conversaciones sobre los contextos donde se originan manifestaciones artístico -culturales y reconoce que responden a características propias de un grupo de personas, de tiempos y lugares diferentes. Expresa sus preferencias sobre manifestaciones artísticas que observa o experimenta y conversa sobre los temas, las ideas y sentimientos que comunican."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "arte_crea",
+          "name": "Crea proyectos desde los lenguajes artísticos",
+          "capacities": [
+            "Explora y experimenta los lenguajes del arte",
+            "Aplica procesos creativos",
+            "Evalúa y comunica sus procesos y proyectos"
+          ],
+          "standards": {
+            "V": "Crea proyectos artísticos individuales o colaborativos explorando formas alternativas de combinar y usar elementos, medios, materiales y técnicas artísticas y tecnologías para la resolución de problemas creativos. Genera ideas investigando una vari edad de fuentes y van manipulando los elementos de los diversos lenguajes de las artes (danza, música, teatro, artes visuales) para e valuar cuáles se ajustan mejor a sus intenciones. Planifica y produce trabajos que comunican ideas y experiencias personales y s ociales e incorpora influencias de su propia comunidad y de otras culturas. Registra sus procesos, identifica los aspectos esenciales de sus trabajos y los va modificando para mejorarlos. Planifica los espacios de presentación considerando sus intenciones y presenta sus descubrimientos y creaciones a una variedad de audiencias. Evalúa si logra sus intenciones de manera efectiva.",
+            "IV": "Crea proyectos artísticos en una variedad de lenguajes que comunican experiencias, ideas, sentimientos y observaciones. Explo ra, selecciona y combina los elementos del arte y utiliza medios, materiales, herramientas y técnicas de los diversos lenguajes d el arte para expresar de diferentes maneras sus ideas y resolver problemas creativos. Demuestra habilidad para planificar trabajos usando sus conocimientos del arte y adecúa sus procesos para ajustarse a diferentes intenciones, que se basan en observaciones o problemas del entorno natural, artístico y cultural. Comunica sus hallazgos, identificando elementos o técnicas o procesos que ha usado par a enriquecer sus creaciones y mejora sus trabajos a partir de retroalimentaciones. Planifica cómo y qué necesita p ara compartir sus experiencias y descubrimientos hacia la comunidad educativa.",
+            "III": "Crea proyectos artísticos que demuestran habilidades artísticas iniciales para comunicar ideas, sentimientos, observaciones y experiencias. Experimenta, selecciona y explora libremente las posibilidades expresivas de los elementos, medios, materiales y técnicas de los diversos lenguajes del arte. Explora ideas que surgen de su imaginación, sus experiencias o de sus observaciones y las concretiza en trabajos de artes visuales, música, teatro o danza. Comparte sus experiencias y creaciones con sus compañeros y su familia. Describe y dialoga sobre las características de sus propios trabajos y los de sus compañeros y responde a preguntas sobre ellos."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        }
+      ]
+    },
+    {
+      "id": "comunicacion",
+      "name": "Comunicación",
+      "approach": "Enfoque comunicativo",
+      "defaultHours": 6,
+      "competencies": [
+        {
+          "id": "com_oral",
+          "name": "Se comunica oralmente en su lengua materna",
+          "capacities": [
+            "Obtiene información del texto oral",
+            "Infiere e interpreta información del texto oral",
+            "Adecúa, organiza y desarrolla las ideas de forma coherente y cohesionada",
+            "Utiliza recursos no verbales y paraverbales de forma estratégica",
+            "Interactúa estratégicamente con distintos interlocutores",
+            "Reflexiona y evalúa la forma, el contenido y contexto del texto oral"
+          ],
+          "standards": {
+            "V": "Se comunica oralmente mediante diversos tipos de textos; infiere el tema, propósito, hechos y conclusiones a partir de información explícita, e interpreta la intención del interlocutor en discursos que contienen ironías. Se expresa adecuándose a situaciones comunicativas formales e informales. Organiza y desarrolla sus ideas en torno a un tema y las relaciona mediante el uso de conectores y algunos referentes, así como de un vocabulario variado y pertinente. Usa recursos no verbales y paraverbales para enfatizar lo que dice. Reflexiona y evalúa los textos escuchados a partir de sus conocimientos y el contexto sociocultural. En un intercambio, hace preguntas y co ntribuciones relevantes que responden a las ideas y puntos de vista de otros, enriqueciendo el tema tratado.",
+            "IV": "Se comunica oralmente mediante diversos tipos de textos; identifica información explícita; infiere e interpre ta hechos, tema y propósito. Organiza y desarrolla sus ideas en torno a un tema y las relaciona mediante el uso de algunos conectores y referentes, así como de un vocabulario variado. Se apoya en recursos no verbales y paraverbales para enfatizar lo que dice. Reflexiona sobre textos escuchados a partir de sus conocimientos y experiencia. Se expresa adecuándose a situaciones comunicativas formales e informales. En un intercambio, comienza a adaptar lo que dice a las necesidades y puntos de vista de quien lo escucha, a través de comentarios y preguntas relevantes.",
+            "III": "Se comunica oralmente mediante diversos tipos de textos; identifica información explícita, infiere e interpreta hechos y temas. Desarrolla sus ideas manteniéndose, por lo general, en el tema; utiliza algunos conectores, así como vocabulario de uso frecuente. Su pronunciación es entendible y se apoya en recursos no verbales y paraverbales. Reflexiona sobre textos escuchados a partir de sus conocimientos y experie ncia. Se expresa adecuándose a su propósito comunicativo, interlocutores y contexto. En un intercambio, participa y responde en forma pertinente a lo que le dicen."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "com_lee",
+          "name": "Lee diversos tipos de textos escritos en su lengua materna",
+          "capacities": [
+            "Obtiene información del texto escrito",
+            "Infiere e interpreta información del texto",
+            "Reflexiona y evalúa la forma, el contenido y contexto del texto"
+          ],
+          "standards": {
+            "V": "Lee diversos tipos de textos con varios elementos complejos en su estructura y con vocabulario variado. Obtiene información e integra datos que están en distintas partes del texto. Realiza inferencias locales a partir de información explícita e implícita. Interpreta el texto considerando información relevante y complementaria para construir su sentido global. Reflexiona sobre aspectos variados del texto a partir de su conocimiento y experiencia. Evalúa el uso del lenguaje, la intención de los recursos textuales y el efecto del texto en el lector a partir de su conocimiento y del contexto sociocultural.",
+            "IV": "Lee diversos tipos de textos que presentan estructura simple con algunos elementos complejos y con vocabulario variado. Obtiene información poco evidente distinguiéndola de otras próximas y semejantes. Realiza inferencias locales a partir de información explícita e implícita. Interpreta el texto considerando información relevante para construir su sentido global. Reflexion a sobre sucesos e ideas importantes del texto y explica la intención de los recursos textuales más comunes a partir de su conocimiento y experiencia.",
+            "III": "Lee diversos tipos de textos de estructura simple en los que predominan palabras conocidas e ilustraciones que apoyan las ideas centrales. Obtiene información poco evidente distinguiéndola de otra semejante y realiza inferencias locales a partir de información explícita. Interpreta el texto considerando información recurrente para construir su sentido global. Opina sobre sucesos e ideas importantes del texto a partir de su propia experiencia."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "com_escribe",
+          "name": "Escribe diversos tipos de textos en su lengua materna",
+          "capacities": [
+            "Adecúa el texto a la situación comunicativa",
+            "Organiza y desarrolla las ideas de forma coherente y cohesionada",
+            "Utiliza convenciones del lenguaje escrito de forma pertinente",
+            "Reflexiona y evalúa la forma, el contenido y contexto del texto escrito"
+          ],
+          "standards": {
+            "V": "Escribe diversos tipos de textos de forma reflexiva. Adecúa su texto al destinatario, propósito y el registro, a partir de su experiencia previa y de algunas fuentes de información complementarias. Organiza y desarrolla lógicamente las ideas en torno a un tema y las estructura en párrafos 13. Establece relaciones entre ideas a través del uso adecuado de algunos tipos de conectores y de referentes; emplea vocabulario variado. Utiliza recursos ortográficos para separar expresiones, ideas y párrafos con la intención de darle claridad y sentido a su texto. Reflexiona y evalúa de manera permanente la coherencia y cohesión de las ideas en el texto que escribe, así como el uso del lenguaje para argumentar o reforzar sentidos y producir efectos en el lector según la situación comunicativa.",
+            "IV": "Escribe diversos tipos de textos de forma reflexiva. Adecúa su texto al destinatario, propósito y el registro a partir de su experiencia previa y de alguna fuente de información. Organiza y desarrolla lógicamente las ideas en torno a un tema. Establece relaciones entre ideas a través del uso adecuado de algunos tipos de conectores y de referentes; emplea vocabulario variado. Utiliza recursos ortográficos básicos para darle claridad y sentido a su texto. Reflexiona sobre la coherencia 1 y cohesión de las ideas en el texto que escribe, y opina acerca del uso de algunos recursos textuales para reforzar sentidos y producir efectos en el lector según la situación comunicativa.",
+            "III": "Escribe diversos tipos de textos de forma reflexiva. Adecúa al propósito y el destinatario a parti r de su experiencia previa. Organiza y desarrolla lógicamente las ideas en torno a un tema. Establece relaciones entre ideas a través del uso adecuado de algunos ti pos de conectores y emplea vocabulario de uso frecuente. Separa adecuadamente las palabras y utiliza algunos recursos ortográficos básicos para darle claridad y sentido a su texto. Reflexiona sobre las ideas más importantes en el texto que escribe y opina acerca d el uso de algunos recursos ortográficos según la situación comunicativa."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        }
+      ]
+    },
+    {
+      "id": "matematica",
+      "name": "Matemática",
+      "approach": "Enfoque centrado en la resolución de problemas",
+      "defaultHours": 7,
+      "competencies": [
+        {
+          "id": "mat_cantidad",
+          "name": "Resuelve problemas de cantidad",
+          "capacities": [
+            "Traduce cantidades a expresiones numéricas",
+            "Comunica su comprensión sobre los números y las operaciones",
+            "Usa estrategias y procedimientos de estimación y cálculo",
+            "Argumenta afirmaciones sobre las relaciones numéricas y las operaciones"
+          ],
+          "standards": {
+            "V": "Resuelve problemas referidos a una o más acciones de comparar, igualar, repetir o repartir cantidades, partir y repartir una cantidad en partes iguales; las traduce a expresiones aditivas, multiplicativas y la potenciación cuadrada y cúbica; así como a expresiones de adición, sustracción y multiplicación con fracciones y decimales (hasta el centésimo). Expresa su comprensión del sistema de numeración decimal con números naturales hasta seis cifras, de divisores y múltiplos, y del valor posicional de los números decimales hasta los centésimos; con lenguaje numérico y repre sentaciones diversas. Representa de diversas formas su comprensión de la noción de fracción como operador y como cociente, así como las equivalencias entre decimales, fracciones o porcentajes usuales35. Selecciona y emplea estrategias diversas, el cálculo mental o escrito para operar con números naturales, fracciones, decimales y porcentajes de manera exacta o aproximada; así como para hacer conversiones de unidades de medida de masa, tiempo y temperatura, y medir de manera exacta o aproximada usando la unidad pertinente. Justifica sus procesos de resolución así como sus afirmaciones sobre las relaciones entre las cuatro operaciones y sus propiedades, basándose en ejemplos y sus conocimientos matemáticos.",
+            "IV": "Resuelve problemas referidos a una o más acciones de agregar, quitar, igualar, repetir o repartir una cantidad, combinar dos colecciones de objetos, así como partir una unidad en partes iguales; traduciéndolas a expresiones aditivas y multiplicativas con números naturales y expresiones aditivas con fracciones usuales36. Expresa su comprensión del valor posici onal en números de hasta cuatro cifras y los representa mediante equivalencias, así también la comprensión de las nociones de multiplicación, sus propiedades conmutativa y asociativa y las nociones de división, la noción de fracción como parte – todo y las equivalencias entre fracciones usuales; usando lenguaje numérico y diversas representaciones. Emplea estrategias, el cálculo mental o escrito para operar de forma exacta y aproximada con números naturales; así también emplea estrategias para sumar, r estar y encontrar equivalencias entre fracciones. Mide o estima la masa y el tiempo, seleccionando y usando unidades no convencionales y convencionales. Justifica sus procesos de resolución y sus afirmaciones sobre operaciones inversas con números naturales.",
+            "III": "Resuelve problemas referidos a acciones de juntar, separar, agregar, quitar, igualar y comparar cantidades; y las traduce a expresiones de adición y sustracción, doble y mitad. Expresa su comprensión del valor de posición en números de dos cifras y los representa mediante equivalencias entre unidades y decenas. Así también, expresa mediante representaciones su comprensión del doble y mitad de una cantidad; usa leng uaje numérico. Emplea estrategias diversas y procedimientos de cálculo y comparación de cantidades; mide y compara el tiempo y la masa, usando unidades no convencionales. Explica por qué debe sumar o restar en una situación y su proceso de resolución."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "mat_regularidad",
+          "name": "Resuelve problemas de regularidad, equivalencia y cambio",
+          "capacities": [
+            "Traduce datos y condiciones a expresiones algebraicas y gráficas",
+            "Comunica su comprensión sobre las relaciones algebraicas",
+            "Usa estrategias y procedimientos para encontrar equivalencias y reglas generales",
+            "Argumenta afirmaciones sobre relaciones de cambio y equivalencia"
+          ],
+          "standards": {
+            "V": "Resuelve problemas de equivalencias, regularidades o relaciones de cambio entre dos magnitudes o entre expresiones; traduciéndolas a ecuaciones que combinan las cuatro operaciones, a expresiones de desigualdad o a relaciones de proporcionalidad directa, y patrones de repetición que combinan criterios geométricos y cuya regla de formación se asocia a la posición de sus elementos. Expresa su comprensión del término general de un patrón, las condiciones de desigualdad expresadas con los signos > y <, así como de la relación proporcional como un cambio constante; usando lenguaj e matemático y diversas representaciones. Emplea recursos, estrategias y propiedades de las igualdades para resolver ecuaciones o hallar valores que cumplen una condición de desigualdad o proporcionalidad; así como procedimientos para crear, continuar o completar patrones. Realiza afirmaciones a pa rtir de sus experiencias concretas, sobre patrones y sus elementos no inmediatos; las justifica con ejemplos, procedimientos, y propiedades de la igualdad y desigualdad.",
+            "IV": "Resuelve problemas que presentan dos equivalencias, regularidades o relación de cambio entre dos magnitudes y expresiones; traduciéndolas a igualdades que contienen operaciones aditivas o multiplicativas, a tablas de valores y a patrones de repetición que combinan criterios y patrones aditivos o multiplicativos. Expresa su comprensión de la regla de formación de un patrón y del signo igual para expresar equivalencia distinguiéndolo de su uso para expresar el resultado de una operación; Así también, describe la relación de cambio entre una magnitud y otra; usando lenguaje matemático y diversas representaciones. Emplea estrategias, la descomposición de números, el cálculo mental para crear, continuar o completar patro nes de repetición. Hace afirmaciones sobre patrones, la equivalencia entre expresiones y sus variaciones y las propiedades de la igualdad, las justifica con argumentos y ejemplos concretos.",
+            "III": "Resuelve problemas que presentan equivalencias o regularidades; traduciéndolas a igualdades que contienen operaciones de adición o de sustracción; y a patrones de repetición de dos criterios perceptuales y patrones aditivos. Expresa su comprensión de las equivalencias y de cómo es un patrón, usando material concreto y diversas representaciones. Emplea estrategias, la descomposición de números, cálculos sencillos para encontrar equivalencias, o para continuar y crear patrones. Explica las relaciones que encuentra en los patrones y lo que debe hacer para mantener el “equilibrio” o la igualdad, con base en experiencias y ejemplos concretos."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "mat_forma",
+          "name": "Resuelve problemas de forma, movimiento y localización",
+          "capacities": [
+            "Modela objetos con formas geométricas y sus transformaciones",
+            "Comunica su comprensión sobre las formas y relaciones geométricas",
+            "Usa estrategias y procedimientos para orientarse en el espacio",
+            "Argumenta afirmaciones sobre relaciones geométricas"
+          ],
+          "standards": {
+            "V": "Resuelve problemas en los que modela características y datos de ubicación de los objetos a formas bidimensionales y tridimensionales, sus elementos, propiedades, su movimiento y ubicación en el plano cartesiano. Describe estas formas reconociendo ángulos rectos, número de lados y vértices del polígono, así como líneas paralelas y perpendiculares, identifica formas simétricas y realiza traslaciones, en cuadrículas. Así también elabora croquis, donde traza y describe desplazamientos y posiciones, usando puntos cardinales y puntos de refere ncia. Usa lenguaje geométrico. Emplea estrategias y procedimientos para trasladar y construir formas a través de la composición y descomposición, y para medir la longitud, superficie y capacidad de los objetos, usando unidades convencionales y no convencionales, recursos e instrumentos de medición. Elabora afirmaciones sobre las figuras compuestas; así como relaciones entre una forma tridimensional y su desarro llo en el plano; las explica con ejemplos concretos y gráficos.",
+            "IV": "Resuelve problemas en los que modela características y datos de ubicación de los objetos del entorno a formas bidimensionales y tridimensionales, sus elementos, posición y desplazamientos. Describe estas formas mediante sus elementos: número de lados, e squinas, lados curvos y rectos; número de puntas caras, formas de sus caras, usando representaciones concretas y dibujos. Así también traza y describe desplazamientos en cuadriculados y posiciones, con puntos de referencia; usando lenguaje geométrico. Emplea estrateg ias y procedimientos basados en la manipulación, para construir objetos y medir su longitud (ancho y largo) usando unidades no convencionales. Explica semejanzas y diferencias entre formas geométricas.",
+            "III": "Resuelve problemas en los que modela las características y datos de ubicación de los objetos del entorno a formas bidimensionales y tridimensionales, sus elementos, posición y desplazamientos. Describe estas formas mediante sus elementos: número de lados, e squinas, lados curvos y rectos; núm ero de puntas caras, formas de sus caras, usando representaciones concretas y dibujos. Así también traza y describe desplazamientos y posiciones, en cuadriculados y puntos de referencia. Emplea estrategias y procedimientos basados e n la manipulación, para construir objetos y medir su longitud (ancho y largo) usando unidades no convencionales. Explica semejanzas y diferencias entre formas geométricas, así como su proceso de resolución."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "mat_datos",
+          "name": "Resuelve problemas de gestión de datos e incertidumbre",
+          "capacities": [
+            "Representa datos con gráficos y medidas estadísticas o probabilísticas",
+            "Comunica la comprensión de los conceptos estadísticos y probabilísticos",
+            "Usa estrategias y procedimientos para recopilar y procesar datos",
+            "Sustenta conclusiones o decisiones con base en la información obtenida"
+          ],
+          "standards": {
+            "V": "Resuelve problemas relacionados con temas de estudio, en las que reconoce variables cualitativas o cuantitativas discretas, recolecta datos a través de encuestas y de diversas fuentes de información. Selecciona tablas de doble entrada, gráficos de barras dobles y gráficos de líneas, seleccionando el más adecuado para representar los datos. Usa el significado de la moda para in terpretar información contenida en gráficos y en diversas fuentes de información. Realiza experimentos aleatorios, reconoce sus posibles resultados y expresa la probabilidad de un evento relacionando el número de casos favorables y el total de casos posibl es. Elabora y justifica predicciones, decisiones y conclusiones, basándose en la información obtenida en el análisis de datos o en la probabilidad de un evento.",
+            "IV": "Resuelve problemas relacionados con datos cualitativos o cuantitativos (discretos) sobre un tema de estudio de recolecta datos a través de encuestas y entrevistas sencillas, registra en tablas de frecuencia simples y los representa en pictogramas, gráficos de barra simple con escala (múltiplos de diez). Interpreta información contenida en gráficos de barras simples y dobles y tablas de doble entrada, comparando frecuencias y usando el significado de la moda de un conjunto de datos; a partir de esta información y elabora algunas conclusiones y toma decisiones. E xpresa la ocurrencia de sucesos cotidianos usando las nociones de seguro, más probable menos probable, justifica su respuesta.",
+            "III": "Resuelve problemas relacionados con datos cualitativos en situaciones de su interés, recolecta datos a través de preguntas sencillas, los registra en listas o tablas de conteo simple (frecuencia) y los organiza en pictogramas horizontales y gráficos de barras simples. Lee la información contenida en estas tablas o gráficos identificando el dato o datos que tuvieron mayor o menor frecuencia y explica sus decisiones basándose en la información producida. Expresa la ocurrencia de sucesos cotidianos usando las nociones de posible o imposible y justifica su respuesta."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        }
+      ]
+    },
+    {
+      "id": "ciencia",
+      "name": "Ciencia y Tecnología",
+      "approach": "Enfoque de indagación y alfabetización científica y tecnológica",
+      "defaultHours": 4,
+      "competencies": [
+        {
+          "id": "cyt_indaga",
+          "name": "Indaga mediante métodos científicos para construir sus conocimientos",
+          "capacities": [
+            "Problematiza situaciones para hacer indagación",
+            "Diseña estrategias para hacer indagación",
+            "Genera y registra datos e información",
+            "Analiza datos e información",
+            "Evalúa y comunica el proceso y resultados de su indagación"
+          ],
+          "standards": {
+            "V": "Indaga las causas o describe un o bjeto o fenómeno que identifica para formular preguntas e hipótesis en las que relaciona las variables que intervienen y que se pueden observar. Propone estrategias para observar o generar una situación controlada en la cual registra evidencias de cómo un a variable independiente afecta a otra dependiente. Establece relaciones entre los datos, los interpreta y los contrasta con información confiable. Evalúa y comunica sus conclusiones y procedimientos.",
+            "IV": "Indaga al establecer las causas de un hecho o fenómeno para formular preguntas y posibles respuestas sobre éstos en base a sus experiencias. Propone estrategias para obtener información sobre el hecho o fenómeno y sus posibles causas, registra datos, los analiza establec iendo relaciones y evidencias de causalidad. Comunica en forma oral, escrita o gráfica sus procedimientos, dificultades, conclusiones y dudas.",
+            "III": "Indaga al explorar objetos o fenómenos, al hacer preguntas, proponer posibles respuesta y actividades para obtener información sobre las características y relaciones que establece sobre estos. Sigue un procedimiento para observar, manipular, describir y comparar sus ensayos y los utiliza para elaborar conclusiones. Expresa en forma oral, escrita o gráfica lo realizado, aprendido y las dificultades de su indagación."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "cyt_explica",
+          "name": "Explica el mundo físico basándose en conocimientos sobre los seres vivos, materia y energía, biodiversidad, Tierra y universo",
+          "capacities": [
+            "Comprende y usa conocimientos sobre los seres vivos, materia y energía, biodiversidad, Tierra y universo",
+            "Evalúa las implicancias del saber y del quehacer científico y tecnológico"
+          ],
+          "standards": {
+            "V": "Explica, en base a evidencia con respaldo científico, las relaciones entre: propiedades o funciones macroscópicas de los cuerpos, materiales o seres vivos con su estructura y movimiento microscópico; la reproducción sexual con la diversidad genética; los ecosistemas con la diversidad de especies; el relieve con la actividad interna de la Tierra. Relaciona el descubrim iento científico o la innovación tecnológica con sus impactos. Justifica su posición frente a situaciones controversiales sobre el uso de la tecnología y el saber científico.",
+            "IV": "Explica, en base a evidencias documentadas con respaldo científico, las relaciones que establece entre: las fuentes de energía o sus manifestaciones con los tipos de cambio que producen en los materiales; entre las fuerzas con el movimiento de los cuerpos; la estructura de los sistemas vivos con sus funciones y su agrupación en especies; la radiación del sol con las zonas climáticas de la tierra y las adaptaciones de los seres vivos. Opina sobre los impactos de diversas tecnologías en la solución de problemas relacionados a necesidades y estilos de vida colectivas.",
+            "III": "Explica, en base a sus observaciones y experiencias previas, las relaciones entre: las características de los materiales con los cambios que sufren por acción de la luz, del calor y del movimiento; la estructura de los seres vivos con sus funciones y su desarrollo; la Tierra, sus componentes y movimientos con los seres que lo habitan. Opina sobre los impactos del uso de objetos tecnológicos en relación a sus necesidades y estilo de vida."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "cyt_disena",
+          "name": "Diseña y construye soluciones tecnológicas para resolver problemas de su entorno",
+          "capacities": [
+            "Determina una alternativa de solución tecnológica",
+            "Diseña la alternativa de solución tecnológica",
+            "Implementa y valida la alternativa de solución tecnológica",
+            "Evalúa y comunica el funcionamiento y los impactos de su alternativa de solución tecnológica"
+          ],
+          "standards": {
+            "V": "Diseña y construye soluciones tecnológicas al identificar las causas que lo generan, y proponer alternativas de solución en base a conocimientos científicos. Representa una de ellas incluyendo sus partes o etapas a través de esquemas o dibujos estructurados. Establece características de forma, estructura y función y explica el procedimiento, los recursos de imple mentación, los ejecuta usando herramientas y materiales seleccionados, verifica el funcionamiento de la solución tecnológica detectando imprecisiones y realiza ajustes para mejorarlo. Explica el procedimiento, conocimiento científico aplicado y limitaciones de la solución tecnológica, Evalúa su funcionamiento a través de pruebas considerando los requerimientos establecidos y propone mejoras. Infiere impactos de la solución tecnológica.",
+            "IV": "Diseña y construye soluciones tecnológicas al establecer, las posibles causas, propone alternativas de solución con conocimientos científicos. Representa una de ellas, incluyendo las partes o etapas, a través de esquemas o dibujos, establece características de forma, estructura y funci ón y explica una secuencia de pasos, para implementarla usando herramientas y materiales, verifica el funcionamiento de la solución tecnológica y realizar ajustes. Explica el procedimiento, conocimiento científico aplicado y beneficios de la solución tecn ológica, evalúa su funcionamiento considerando los requerimientos establecidos y proponer mejoras.",
+            "III": "Diseña y construye soluciones tecnológicas al establecer las causas de un problema tecnológico y proponer alternativas de solución, representa una, incluyendo las partes, a través de esquemas o dibujos y describe la secuencia de pasos para implementarla, usando herramientas y materiales seleccionados. Realiza ajustes en el proceso de construcción de la solución tecnológic a. Describe el procedimiento y beneficios de la solución tecnológica, evalúa su funcionamiento según los requerimientos establecidos, y propone mejoras."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        }
+      ]
+    },
+    {
+      "id": "religion",
+      "name": "Educación Religiosa",
+      "approach": "Enfoques humanista cristiano, cristocéntrico y comunitario",
+      "defaultHours": 2,
+      "competencies": [
+        {
+          "id": "rel_identidad",
+          "name": "Construye su identidad como persona humana, amada por Dios, digna, libre y trascendente, comprendiendo la doctrina de su propia religión, abierto al diálogo con las que le son cercanas",
+          "capacities": [
+            "Conoce a Dios y asume su identidad religiosa y espiritual como persona digna, libre y trascendente",
+            "Cultiva y valora las manifestaciones religiosas de su entorno argumentando su fe de manera comprensible y respetuosa"
+          ],
+          "standards": {
+            "III": "Pendiente de incorporar desde fuente oficial validada para Educación Religiosa.",
+            "IV": "Pendiente de incorporar desde fuente oficial validada para Educación Religiosa.",
+            "V": "Pendiente de incorporar desde fuente oficial validada para Educación Religiosa."
+          },
+          "source": "Plantilla institucional / pendiente de fuente oficial validada"
+        },
+        {
+          "id": "rel_encuentro",
+          "name": "Asume la experiencia del encuentro personal y comunitario con Dios en su proyecto de vida en coherencia con su creencia religiosa",
+          "capacities": [
+            "Transforma su entorno desde el encuentro personal y comunitario con Dios y desde la fe que profesa",
+            "Actúa coherentemente en razón de su fe según los principios de su conciencia moral en situaciones concretas de la vida"
+          ],
+          "standards": {
+            "III": "Pendiente de incorporar desde fuente oficial validada para Educación Religiosa.",
+            "IV": "Pendiente de incorporar desde fuente oficial validada para Educación Religiosa.",
+            "V": "Pendiente de incorporar desde fuente oficial validada para Educación Religiosa."
+          },
+          "source": "Plantilla institucional / pendiente de fuente oficial validada"
+        }
+      ]
+    },
+    {
+      "id": "transversal",
+      "name": "Competencias transversales",
+      "approach": "Aprovechamiento de las TIC y enfoque metacognitivo-autorregulado",
+      "defaultHours": 1,
+      "competencies": [
+        {
+          "id": "tic_entornos",
+          "name": "Se desenvuelve en entornos virtuales generados por las TIC",
+          "capacities": [
+            "Personaliza entornos virtuales",
+            "Gestiona información del entorno virtual",
+            "Interactúa en entornos virtuales",
+            "Crea objetos virtuales en diversos formatos"
+          ],
+          "standards": {
+            "V": "Se desenvuelve en los entornos virtuales cuando genera su entorno virtual personal para representar su identidad y su conoc imiento e interactuar con otros, seleccionando, comparando y eligiendo entre distintas actividades, valores, actitudes y conocimientos que experimenta en los entornos virtuales habituales.",
+            "IV": "Se desenvuelve en los entorno s virtuales cuando experimenta de manera auto - regulada con diversas estrategias para intervenir en actividades de los entornos virtuales o representar ideas a través de objetos virtuales, organizándolas a partir de su observación de procedimientos e interp retaciones de las interacciones realizadas en las interfaces proporcionadas por las TIC.",
+            "III": "Se desenvuelve en los entornos virtuales cuando ejecuta procedimientos de diversas aplicaciones para generar o modificar objetos virtuales o representar vivencias, observando diferencias entre su actuación y los resultados y realizando intentos sucesivos."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        },
+        {
+          "id": "auto_aprendizaje",
+          "name": "Gestiona su aprendizaje de manera autónoma",
+          "capacities": [
+            "Define metas de aprendizaje",
+            "Organiza acciones estratégicas para alcanzar sus metas de aprendizaje",
+            "Monitorea y ajusta su desempeño durante el proceso de aprendizaje"
+          ],
+          "standards": {
+            "V": "Gestiona su aprendizaje al darse cuenta lo que debe aprender al precisar lo más importante en la realización de una tarea y la define como meta personal. Comprende que debe organizarse lo más específico posible y que lo planteado incluya más de una estrategia y procedimientos que le permitan realizar la tarea, considerando su experiencia previa al respecto. Monitorea de manera permanente sus avances respecto a las metas de aprendizaje previamente establecidas al evaluar sus procesos de realización en más de un momento, a partir de esto y de los consejos o comentarios de un compañero de clase realiza los ajustes necesarios mostrando disposición a los posibles cambios.",
+            "IV": "Gestiona su aprendizaje al darse cuenta lo que debe aprender al preguntarse hasta dónde quiere llegar respecto de una tarea y la define como meta de aprendizaje. Comprende que debe organizarse y que lo planteado incluya por lo menos una estrategia y procedimientos que le permitan realizar la tarea. Monitorea sus avances respecto a las metas de aprendizaje al evaluar el proceso en un momento de trabajo y los resultados obtenidos, a partir de esto y de comparar el trabajo de un compañero considerar realizar un ajuste mostrando disposición al posible cambio.",
+            "III": "Gestiona su aprendizaje al darse cuenta lo que debe aprender al preguntarse qué es lo que aprenderá y establecer aquello que le es posible lograr para realizar la tarea. Comprende que debe organizarse y que lo planteado incluya acciones cortas para realizar la tarea. Monitorea sus avances respecto a la tarea al evaluar con facilitación y retroalimentación externa un proceso del trabajo y los resultados obtenidos siendo ayudado para considerar el ajuste requerido y disponerse al cambio."
+          },
+          "source": "Programa Curricular de Educación Primaria"
+        }
+      ]
+    }
+  ],
+  "crosscuttingApproaches": [
+    "Enfoque de Derechos",
+    "Enfoque Inclusivo o de Atención a la diversidad",
+    "Enfoque Intercultural",
+    "Enfoque de Igualdad de género",
+    "Enfoque Ambiental",
+    "Enfoque de Orientación al bien común",
+    "Enfoque de Búsqueda de la excelencia"
+  ],
+  "cycleDescriptions": {
+    "III": "En este ciclo se fortalecen las competencias comunicativas mediante la apropiación progresiva de la lectura y escritura convencional y se desarrollan operaciones lógicas vinculadas con el pensamiento concreto. El aprendizaje requiere juego, situaciones concretas y acompañamiento cercano.",
+    "IV": "En este ciclo los estudiantes profundizan aprendizajes más complejos vinculados con su entorno, incrementan su autonomía, amplían sus posibilidades de interacción social y fortalecen el trabajo cooperativo.",
+    "V": "En este ciclo se consolida progresivamente el pensamiento operativo; los estudiantes analizan la realidad, buscan información en fuentes diversas, colaboran entre pares y comunican resultados con mayor autonomía."
+  }
+}

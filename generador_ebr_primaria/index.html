@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Materiales EBR | Primaria</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <div class="brand">
+        <div class="brand-mark">EBR</div>
+        <div>
+          <strong>Materiales EBR</strong>
+          <span>Primaria · V2.0</span>
+        </div>
+      </div>
+      <nav class="nav-list">
+        <button class="nav-item active" data-view="inicio"><span>01</span>Inicio</button>
+        <button class="nav-item" data-view="fuentes"><span>02</span>1. Información</button>
+        <button class="nav-item" data-view="programacion"><span>03</span>2. Programación</button>
+        <button class="nav-item" data-view="unidad"><span>04</span>3. Unidades</button>
+        <button class="nav-item" data-view="sesion"><span>05</span>4. Sesiones</button>
+        <button class="nav-item" data-view="curriculo"><span>06</span>Opciones avanzadas</button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="status-dot"></div>
+        <div>
+          <strong>Guardado local</strong>
+          <span>Los datos permanecen en este navegador.</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Plataforma integral</p>
+          <h1 id="viewTitle">Diseño curricular conectado</h1>
+        </div>
+        <div class="top-actions">
+          <button class="btn ghost" id="btnSave">Guardar proyecto</button>
+          <button class="btn ghost" id="btnExport">Descargar respaldo</button>
+          <label class="btn ghost file-label">Abrir respaldo<input id="projectImport" type="file" accept="application/json" hidden></label>
+          <button class="btn primary" id="btnPrint">Imprimir / PDF</button>
+        </div>
+      </header>
+
+      <section class="workflow-strip" aria-label="Flujo de trabajo">
+        <div class="workflow-step active"><span>1</span><div><strong>Información</strong><small>Datos esenciales</small></div></div>
+        <div class="workflow-line"></div>
+        <div class="workflow-step"><span>2</span><div><strong>Programación</strong><small>Documento madre</small></div></div>
+        <div class="workflow-line"></div>
+        <div class="workflow-step"><span>3</span><div><strong>Unidades y sesiones</strong><small>Desarrollo derivado</small></div></div>
+      </section>
+
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+      <section class="view active" id="view-inicio">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <p class="eyebrow">Nueva versión guiada · V2.0</p>
+            <h2>Primero validas la programación. Después generas unidades y sesiones.</h2>
+            <p>La plataforma trabaja con dos rutas claras: crear la programación anual desde cero o cargar una programación existente. En ambos casos, la programación validada se convierte en el documento madre y gobierna todo lo demás.</p>
+            <div class="hero-actions">
+              <button class="btn primary" id="btnStartCreate">Crear desde programación</button>
+              <button class="btn secondary" id="btnStartImport">Cargar programación existente</button>
+            </div>
+          </div>
+          <div class="hero-flow">
+            <div class="flow-node"><b>INFORMACIÓN</b><span>Área, grados, contexto y ruta de trabajo</span></div>
+            <div class="flow-arrow"></div>
+            <div class="flow-node"><b>PROGRAMACIÓN</b><span>Documento madre validado</span></div>
+            <div class="flow-arrow"></div>
+            <div class="flow-node"><b>UNIDADES Y SESIONES</b><span>Herencia curricular y documental</span></div>
+          </div>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric-card"><span>Fuentes contextuales</span><strong id="metricSources">0/3</strong><small>Diagnóstico, calendario, misión/visión</small></article>
+          <article class="metric-card"><span>Unidades creadas</span><strong id="metricUnits">0</strong><small>Derivadas de la programación</small></article>
+          <article class="metric-card"><span>Sesiones guardadas</span><strong id="metricSessions">0</strong><small>Vinculadas a sus unidades</small></article>
+          <article class="metric-card"><span>Motor curricular</span><strong id="metricCompetencies">24</strong><small>Competencias catalogadas en esta V1</small></article>
+        </div>
+
+        <div class="two-col">
+          <article class="panel">
+            <div class="panel-head"><div><p class="eyebrow">Estado</p><h3>Control de coherencia</h3></div></div>
+            <div id="coherenceList" class="check-list"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-head"><div><p class="eyebrow">Principio de diseño</p><h3>Jerarquía obligatoria</h3></div></div>
+            <div class="inheritance-list">
+              <div><b>Primaria → Área → Grado(s)</b><p>La selección curricular se organiza por área y por grado, con su ciclo relacionado automáticamente.</p></div>
+              <div><b>Programación anual</b><p>Siempre es el documento madre y define unidades, periodos, enfoques y trazabilidad.</p></div>
+              <div><b>Unidades → Sesiones</b><p>Cada documento hereda el anterior y no puede contradecir la programación validada.</p></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-fuentes">
+        <div class="section-heading">
+          <div><p class="eyebrow">Paso 1</p><h2>Información esencial</h2><p>Completa solo lo necesario. Si eliges cargar una programación existente, primero revisa la información detectada y luego confírmala.</p></div>
+          <div class="inline-actions"><button class="btn ghost" id="btnClearInformation">Limpiar contenido anterior</button><button class="btn primary" id="btnAnalyzeSources">Revisar información</button></div>
+        </div>
+        <div class="simple-help"><b>¿Cómo deseas trabajar?</b> Ruta A: crear programación desde cero. Ruta B: cargar programación existente y validarla antes de continuar.</div>
+
+        <article class="panel" id="workflowModePanel">
+          <div class="panel-head"><div><p class="eyebrow">Ruta de trabajo</p><h3>Selecciona una modalidad</h3></div><span class="badge source" id="workflowModeBadge">Ruta A</span></div>
+          <div class="workflow-choice-grid">
+            <button class="workflow-choice active" id="modeCreateCard" data-mode="create" type="button">
+              <span class="workflow-choice-index">Ruta A</span>
+              <strong>Crear todo el material</strong>
+              <small>Genera la programación anual y, a partir de ella, sus unidades y sesiones.</small>
+            </button>
+            <button class="workflow-choice" id="modeImportCard" data-mode="import" type="button">
+              <span class="workflow-choice-index">Ruta B</span>
+              <strong>Usar una programación existente</strong>
+              <small>Carga una programación elaborada para generar sus unidades y sesiones respetando su contenido.</small>
+            </button>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head"><div><p class="eyebrow">Datos informativos</p><h3>Datos básicos para la programación</h3></div><span class="badge source">Editable</span></div>
+          <div class="form-grid four">
+            <label>Institución educativa<input id="schoolName" type="text" placeholder="Ej. I.E. N.° 14941 – Alto de la Laguna"></label>
+            <label>Docente responsable<input id="teacherName" type="text" placeholder="Nombres y apellidos"></label>
+            <label>Año escolar<input id="schoolYear" type="number" min="2024" max="2100" value="2026"></label>
+            <label>Tipo de atención<select id="schoolType"><option>Unidocente</option><option>Multigrado</option><option>Polidocente completa</option></select></label>
+          </div>
+          <div class="form-grid four">
+            <label>Nivel educativo<input type="text" value="Primaria" readonly aria-readonly="true"></label>
+            <label>Organización del año<select id="sourcePeriodType"><option value="Bimestres">Bimestres (4 periodos)</option><option value="Trimestres">Trimestres (3 periodos)</option></select></label>
+            <label>Visión institucional<textarea id="visionText" rows="3" placeholder="Visión institucional"></textarea></label>
+            <label>Misión institucional<textarea id="missionText" rows="3" placeholder="Misión institucional"></textarea></label>
+          </div>
+          <div class="form-row grades-row">
+            <span>Grados atendidos</span>
+            <div class="chip-checks" id="gradeChecks">
+              <label><input type="checkbox" value="1" checked>1.°</label><label><input type="checkbox" value="2" checked>2.°</label><label><input type="checkbox" value="3" checked>3.°</label><label><input type="checkbox" value="4" checked>4.°</label><label><input type="checkbox" value="5" checked>5.°</label><label><input type="checkbox" value="6" checked>6.°</label>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel" id="importPanel">
+          <div class="panel-head"><div><p class="eyebrow">Ruta B</p><h3>Cargar programación existente</h3><p>Adjunta un archivo Word o PDF. La plataforma detectará la información y te pedirá validarla antes de continuar.</p></div><span class="badge draft" id="importBadge">Pendiente</span></div>
+          <div class="form-grid two">
+            <label class="full">Archivo de programación<input id="programmingImportFile" type="file" accept=".docx,.pdf,.txt,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain"></label>
+            <div class="simple-help"><b>Detección esperada:</b> grados, institución, docente, año, periodos, unidades, títulos, fechas, situaciones significativas, competencias, enfoques, productos o evidencias y sesiones si aparecen.</div>
+          </div>
+          <div class="file-state" id="programmingImportState">Sin programación cargada</div>
+        </article>
+
+        <article class="panel" id="importReviewPanel">
+          <div class="panel-head"><div><p class="eyebrow">Revisión</p><h3>Información encontrada en la programación</h3><p>Revisa y corrige lo detectado. La plataforma no modifica silenciosamente el documento importado.</p></div><span class="badge draft" id="importReviewBadge">Por validar</span></div>
+          <div class="form-grid four">
+            <label>Nivel detectado<input id="importLevel" type="text" value="Primaria" readonly aria-readonly="true"></label>
+            <label>Grados detectados<input id="importGrades" type="text" placeholder="Ej. 3,4"></label>
+            <label>Año detectado<input id="importYear" type="number" min="2024" max="2100"></label>
+            <label>Periodos<select id="importPeriodType"><option value="Bimestres">Bimestres</option><option value="Trimestres">Trimestres</option></select></label>
+          </div>
+          <div class="form-grid two">
+            <label>Institución detectada<input id="importSchoolName" type="text"></label>
+            <label>Docente detectado<input id="importTeacherName" type="text"></label>
+          </div>
+          <label class="full">Resumen detectado<textarea id="importSummaryText" rows="6"></textarea></label>
+          <div class="panel-actions"><button class="btn secondary" id="btnLoadImportIntoForm">Pasar datos a la ruta activa</button><button class="btn primary" id="btnValidateImport">Validar programación importada</button></div>
+        </article>
+
+        <div class="source-grid">
+          <article class="source-card" data-source="diagnosis">
+            <div class="source-top"><div><span class="source-index">01</span><h3>Diagnóstico del contexto estudiantil</h3></div><span class="badge required">Requerido</span></div>
+            <p>Problemas, potencialidades, necesidades, intereses y características que estén expresamente presentes en la fuente.</p>
+            <div class="drop-zone" data-drop="diagnosis">
+              <strong>Arrastra un archivo o selecciónalo</strong><span>Word, PDF o TXT</span>
+              <input id="diagnosisFile" type="file" accept=".docx,.pdf,.txt,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+            </div>
+            <label class="full">También puedes pegar el texto<textarea id="diagnosisText" rows="7" placeholder="Pega aquí el diagnóstico si no deseas adjuntar un archivo."></textarea></label>
+            <div class="file-state" id="diagnosisState">Sin fuente cargada</div>
+          </article>
+
+          <article class="source-card" data-source="calendar">
+            <div class="source-top"><div><span class="source-index">02</span><h3>Calendario comunal</h3></div><span class="badge required">Requerido</span></div>
+            <p>Fechas, festividades, actividades productivas, conmemoraciones y otros acontecimientos del contexto.</p>
+            <div class="drop-zone" data-drop="calendar">
+              <strong>Arrastra un archivo o selecciónalo</strong><span>Word, PDF, Excel o TXT</span>
+              <input id="calendarFile" type="file" accept=".docx,.pdf,.xlsx,.xls,.csv,.txt">
+            </div>
+            <label class="full">Texto o lista manual<textarea id="calendarText" rows="7" placeholder="Ej. 22/03 - Día Mundial del Agua&#10;24/06 - Día del Campesino"></textarea></label>
+            <div class="file-state" id="calendarState">Sin fuente cargada</div>
+          </article>
+
+          <article class="source-card" data-source="identity">
+            <div class="source-top"><div><span class="source-index">03</span><h3>Visión y misión institucional</h3></div><span class="badge required">Requerido</span></div>
+            <p>Sirve para reconocer prioridades institucionales y orientar la programación sin repetir mecánicamente el texto.</p>
+            <div class="drop-zone" data-drop="identity">
+              <strong>Arrastra un archivo o selecciónalo</strong><span>Word, PDF o TXT</span>
+              <input id="identityFile" type="file" accept=".docx,.pdf,.txt">
+            </div>
+            <label class="full">Visión y misión<textarea id="identityText" rows="7" placeholder="Pega aquí la visión y misión institucional."></textarea></label>
+            <div class="file-state" id="identityState">Sin fuente cargada</div>
+          </article>
+        </div>
+
+        <article class="panel" id="structuredContextPanel">
+          <div class="panel-head"><div><p class="eyebrow">Revisión</p><h3>Información encontrada</h3><p>Revisa los datos detectados. Puedes corregirlos antes de confirmar y generar la programación.</p></div><span class="badge draft">Por confirmar</span></div>
+          <div class="context-columns">
+            <div><h4>Problemas / desafíos</h4><div id="contextProblems" class="token-editor"></div></div>
+            <div><h4>Potencialidades</h4><div id="contextPotential" class="token-editor"></div></div>
+            <div><h4>Necesidades / intereses</h4><div id="contextNeeds" class="token-editor"></div></div>
+            <div><h4>Calendario detectado</h4><div id="contextEvents" class="token-editor"></div></div>
+          </div>
+          <div class="panel-actions"><button class="btn secondary" id="btnAddContext">Agregar elemento manual</button><button class="btn primary" id="btnValidateContext">Confirmar información</button></div>
+        </article>
+      </section>
+
+      <section class="view" id="view-programacion">
+        <div class="section-heading">
+          <div><p class="eyebrow">Documento madre</p><h2>Programación curricular anual</h2><p>La programación anual integra todas las áreas curriculares. Cada unidad y cada sesión sí trabajan una sola área derivada de esa programación.</p></div>
+          <div class="inline-actions"><button class="btn secondary" id="btnBuildUnits">Preparar unidades</button><button class="btn primary generate-main" id="btnGenerateAnnual">GENERAR PROGRAMACIÓN</button></div>
+        </div>
+
+        <div id="programmingAlert" class="alert-panel"></div>
+
+        <div class="teacher-guide" aria-label="Guía rápida para generar la programación">
+          <div class="teacher-guide-step"><span>1</span><div><strong>Revisa el periodo</strong><small>Elige trimestres o bimestres y confirma las unidades.</small></div></div>
+          <div class="teacher-guide-arrow">›</div>
+          <div class="teacher-guide-step"><span>2</span><div><strong>Revisa las competencias</strong><small>La plataforma propone una distribución que puedes modificar.</small></div></div>
+          <div class="teacher-guide-arrow">›</div>
+          <div class="teacher-guide-step"><span>3</span><div><strong>Genera el documento</strong><small>Pulsa “Generar Programación” para ver el documento completo.</small></div></div>
+        </div>
+
+        <div class="tabbar" role="tablist">
+          <button class="tab active" data-progtab="units">1. Unidades y tiempo</button>
+          <button class="tab" data-progtab="curriculum">2. Competencias</button>
+          <button class="tab" data-progtab="studyplan">3. Horas por área</button>
+          <button class="tab" data-progtab="values">4. Valores y evaluación</button>
+        </div>
+
+        <div class="prog-tab active" id="prog-units">
+          <article class="panel">
+            <div class="panel-head"><div><p class="eyebrow">Matriz anual</p><h3>Organización temporal de unidades</h3></div><span class="badge draft">Editable</span></div>
+            <div class="form-grid two compact guided-programming-grid">
+              <div class="smart-summary" id="annualAreaSummary"></div>
+              <div class="simple-help"><b>Importante:</b> aquí organizas la programación anual completa. El área específica se define en cada unidad para mantener la coherencia de unidades y sesiones.</div>
+            </div>
+            <div class="form-grid five compact annual-period-grid">
+              <label>Inicio del año lectivo<input id="annualStart" type="date" value="2026-03-16"></label>
+              <label>Fin del año lectivo<input id="annualEnd" type="date" value="2026-12-20"></label>
+              <label>Organización del año<select id="periodType"><option value="Trimestres">Trimestres (3 periodos)</option><option value="Bimestres">Bimestres (4 periodos)</option></select></label>
+              <label>Periodos<input id="periodCountDisplay" type="text" value="3 trimestres" readonly aria-readonly="true"></label>
+              <label>N.° de unidades<input id="unitCount" type="number" min="3" max="12" value="10"></label>
+            </div>
+            <div id="periodSummary" class="simple-help">Las unidades se distribuirán automáticamente en 3 trimestres. Puedes revisar el resultado antes de generar.</div>
+            <div class="unit-editor-head" aria-hidden="true"><span>Unidad</span><span>Periodo</span><span>Área</span><span>Mes</span><span>Días</span><span>Título de la experiencia</span><span>Contexto principal</span><span></span></div>
+            <div id="unitsEditor" class="unit-editor"></div>
+          </article>
+        </div>
+
+        <div class="prog-tab" id="prog-curriculum">
+          <article class="panel">
+            <div class="panel-head"><div><p class="eyebrow">Trazabilidad</p><h3>Competencias por unidad</h3><p>Cada unidad trabaja una sola área. La matriz muestra todas las áreas, pero solo habilita competencias del área elegida para cada unidad.</p></div></div>
+            <div id="curriculumMatrix" class="matrix-wrap"></div>
+          </article>
+        </div>
+
+        <div class="prog-tab" id="prog-studyplan">
+          <article class="panel">
+            <div class="panel-head"><div><p class="eyebrow">Carga horaria</p><h3>Plan de estudios institucional</h3><p>Los valores iniciales replican la distribución del modelo analizado y pueden editarse.</p></div><span class="badge source">Institucional</span></div>
+            <div id="studyPlanEditor" class="study-plan"></div>
+          </article>
+        </div>
+
+        <div class="prog-tab" id="prog-values">
+          <div class="two-col">
+            <article class="panel">
+              <div class="panel-head"><div><p class="eyebrow">Matriz</p><h3>Valores y actitudes</h3></div></div>
+              <div id="valuesEditor"></div>
+              <button class="btn secondary" id="btnAddValue">Agregar valor</button>
+            </article>
+            <article class="panel">
+              <div class="panel-head"><div><p class="eyebrow">Evaluación</p><h3>Criterio institucional</h3></div></div>
+              <label class="full">Texto de evaluación<textarea id="annualEvaluation" rows="12">La evaluación será permanente, flexible y criterial. Permitirá recoger y analizar evidencias relevantes sobre los aprendizajes para retroalimentar oportunamente a los estudiantes y tomar decisiones pedagógicas. Los instrumentos se seleccionarán según la evidencia y los criterios de evaluación de cada unidad y sesión.</textarea></label>
+            </article>
+          </div>
+        </div>
+
+        <article class="preview-panel preview-hidden" id="annualPreviewPanel" aria-hidden="true">
+          <div class="preview-toolbar preview-toolbar-extended"><div class="preview-title-group"><span class="badge draft">Vista previa</span><strong>Programación anual</strong><span class="preview-status" id="annualPreviewStatus">Pendiente de confirmar</span></div><div class="preview-actions"><button class="btn secondary" id="btnEditAnnualPreview">Editar</button><button class="btn primary" id="btnConfirmAnnualPreview">Validar y continuar</button><button class="btn ghost" data-print-target="annualPreview">Imprimir / PDF</button><button class="btn secondary" id="btnDownloadUnits">DESCARGAR UNIDADES</button><button class="btn secondary" id="btnDownloadSessions">DESCARGAR SESIONES</button></div></div>
+          <div class="document-preview" id="annualPreview"></div>
+        </article>
+      </section>
+
+      <section class="view" id="view-unidad">
+        <div class="section-heading">
+          <div><p class="eyebrow">Segundo nivel</p><h2>Unidad didáctica / experiencia de aprendizaje</h2><p>Todo dato heredado de la programación se muestra bloqueado o identificado como tal.</p></div>
+          <div class="inline-actions"><button class="btn secondary" id="btnSaveUnit">Guardar unidad</button><button class="btn primary" id="btnPreviewUnit">GENERAR UNIDADES</button></div>
+        </div>
+
+        <div id="unitAlert" class="alert-panel"></div>
+
+        <article class="panel">
+          <div class="form-grid three">
+            <label>Unidad de la programación<select id="unitSelector"></select></label>
+            <label>Producto general<input id="unitProduct" type="text" placeholder="Producto general de la unidad"></label>
+            <label>Estado<select id="unitStatus"><option>Borrador</option><option>Validada</option></select></label>
+          </div>
+          <div class="inherit-banner">Título, duración, contexto, calendario y competencias proceden de la programación anual. Puedes ajustar la situación significativa antes de validar la unidad.</div>
+          <label class="full">Situación significativa<textarea id="unitSituation" rows="7"></textarea></label>
+          <div class="form-row"><span>Enfoques transversales</span><div class="chip-checks wrap" id="unitApproaches"></div></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head"><div><p class="eyebrow">Propósitos</p><h3>Área, competencia, propósito, criterios y evidencia</h3></div><span class="badge source">Hereda competencias</span></div>
+          <div id="unitPurposesEditor" class="purpose-editor"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head"><div><p class="eyebrow">Secuencia</p><h3>Sesiones por semana</h3><p>Estas sesiones aparecerán disponibles en el generador de sesiones.</p></div><button class="btn secondary" id="btnAddSessionPlan">Agregar sesión</button></div>
+          <div id="sessionPlanEditor" class="session-plan-editor"></div>
+        </article>
+
+        <article class="panel">
+          <div class="form-grid two">
+            <label>Evaluación<textarea id="unitEvaluation" rows="7" placeholder="Cómo se recogerán y valorarán las evidencias de la unidad."></textarea></label>
+            <label>Recursos<textarea id="unitResources" rows="7" placeholder="Materiales de la zona, textos, tabletas, biblioteca, etc."></textarea></label>
+          </div>
+          <label class="full">Bibliografía<textarea id="unitBibliography" rows="4">Currículo Nacional de la Educación Básica; Programa Curricular de Educación Primaria; Programación anual validada; fuentes institucionales pertinentes.</textarea></label>
+        </article>
+
+        <article class="preview-panel">
+          <div class="preview-toolbar preview-toolbar-extended"><div class="preview-title-group"><span class="badge draft">Vista previa</span><strong>Unidad didáctica</strong><span class="preview-status" id="unitPreviewStatus">Pendiente de confirmar</span></div><div class="preview-actions"><button class="btn secondary" id="btnEditUnitPreview">Seguir editando</button><button class="btn primary" id="btnConfirmUnitPreview">Confirmar contenido</button><button class="btn ghost" data-print-target="unitPreview">Imprimir solo documento</button></div></div>
+          <div class="document-preview" id="unitPreview"></div>
+        </article>
+      </section>
+
+      <section class="view" id="view-sesion">
+        <div class="section-heading">
+          <div><p class="eyebrow">Tercer nivel</p><h2>Sesión de aprendizaje</h2><p>El generador adapta la secuencia metodológica al área y a la competencia seleccionada.</p></div>
+          <div class="inline-actions"><button class="btn secondary" id="btnSaveSession">Guardar sesión</button><button class="btn primary" id="btnPreviewSession">DESCARGAR / REVISAR SESIÓN</button></div>
+        </div>
+
+        <div id="sessionAlert" class="alert-panel"></div>
+
+        <article class="panel">
+          <div class="form-grid four">
+            <label>Unidad<select id="sessionUnitSelector"></select></label>
+            <label>Sesión prevista<select id="sessionPlanSelector"></select></label>
+            <label>Fecha<input id="sessionDate" type="date"></label>
+            <label>Duración total<select id="sessionDuration"><option value="90">90 min</option><option value="135">135 min</option><option value="180">180 min</option></select></label>
+          </div>
+          <div class="form-grid three">
+            <label>Área<select id="sessionArea"></select></label>
+            <label>Competencia<select id="sessionCompetency"></select></label>
+            <label>Instrumento<select id="sessionInstrument"><option>Lista de cotejo</option><option>Rúbrica</option><option>Escala de valoración</option><option>Registro anecdótico</option></select></label>
+          </div>
+          <label class="full">Título<input id="sessionTitle" type="text" placeholder="Título de la sesión"></label>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head"><div><p class="eyebrow">Aprendizaje esperado</p><h3>Propósito, criterios y evidencia</h3></div><span class="badge source">Heredado y editable</span></div>
+          <label class="full">Propósito<textarea id="sessionPurpose" rows="3"></textarea></label>
+          <div class="form-grid three">
+            <label>Criterio ciclo III<textarea id="sessionCriterionIII" rows="5"></textarea></label>
+            <label>Criterio ciclo IV<textarea id="sessionCriterionIV" rows="5"></textarea></label>
+            <label>Criterio ciclo V<textarea id="sessionCriterionV" rows="5"></textarea></label>
+          </div>
+          <label class="full">Evidencia<input id="sessionEvidence" type="text"></label>
+          <div class="form-row"><span>Enfoque transversal</span><select id="sessionApproach"></select><input id="sessionAttitude" type="text" placeholder="Acción o actitud observable"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head"><div><p class="eyebrow">Procesos didácticos</p><h3 id="didacticTitle">Secuencia metodológica</h3><p id="didacticHint"></p></div><button class="btn secondary" id="btnResetDidactic">Restablecer estructura</button></div>
+          <div id="didacticEditor" class="didactic-editor"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head"><div><p class="eyebrow">Evaluación</p><h3>Criterios del instrumento</h3></div><button class="btn secondary" id="btnAddInstrumentCriterion">Agregar criterio</button></div>
+          <div id="instrumentCriteriaEditor"></div>
+        </article>
+
+        <article class="preview-panel">
+          <div class="preview-toolbar preview-toolbar-extended"><div class="preview-title-group"><span class="badge draft">Vista previa</span><strong>Sesión de aprendizaje</strong><span class="preview-status" id="sessionPreviewStatus">Pendiente de confirmar</span></div><div class="preview-actions"><button class="btn secondary" id="btnEditSessionPreview">Seguir editando</button><button class="btn primary" id="btnConfirmSessionPreview">Confirmar contenido</button><button class="btn ghost" data-print-target="sessionPreview">Imprimir solo documento</button></div></div>
+          <div class="document-preview" id="sessionPreview"></div>
+        </article>
+      </section>
+
+      <section class="view" id="view-curriculo">
+        <div class="section-heading">
+          <div><p class="eyebrow">Base curricular</p><h2>Motor curricular de Primaria</h2><p>Catálogo local para impedir combinaciones imposibles. Educación Religiosa queda marcada como pendiente de completar con una fuente oficial curricular específica.</p></div>
+        </div>
+        <article class="panel">
+          <div class="form-grid three compact">
+            <label>Ciclo<select id="browserCycle"><option>III</option><option>IV</option><option>V</option></select></label>
+            <label>Área<select id="browserArea"></select></label>
+            <label>Competencia<select id="browserCompetency"></select></label>
+          </div>
+          <div id="curriculumBrowser" class="curriculum-browser"></div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="contextModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="panel-head"><div><p class="eyebrow">Contexto</p><h3>Agregar elemento</h3></div><button class="icon-btn" data-close-modal>×</button></div>
+      <label>Tipo<select id="contextType"><option value="problems">Problema / desafío</option><option value="potential">Potencialidad</option><option value="needs">Necesidad / interés</option><option value="events">Evento del calendario</option></select></label>
+      <label>Contenido<textarea id="contextValue" rows="4"></textarea></label>
+      <div class="panel-actions"><button class="btn ghost" data-close-modal>Cancelar</button><button class="btn primary" id="btnConfirmContext">Agregar</button></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="assets/curriculum.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
